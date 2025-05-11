@@ -35,7 +35,7 @@ class _UserPageState extends State<UserPage> {
   }
 
   Future<void> _authenticateUser() async {
-    const url = 'http://192.168.2.105:8000/api/get-token';
+    const url = 'http://192.168.2.106:8000/api/get-token';
     try {
       final response = await http.post(
         Uri.parse(url),
@@ -70,7 +70,7 @@ class _UserPageState extends State<UserPage> {
       return;
     }
 
-    const url = 'http://192.168.2.105:8000/api/slots';
+    const url = 'http://192.168.2.106:8000/api/slots';
     try {
       final response = await http.post(
         Uri.parse(url),
@@ -101,7 +101,7 @@ class _UserPageState extends State<UserPage> {
       return;
     }
 
-    const url = 'http://192.168.2.105:8000/api/book-slot';
+    const url = 'http://192.168.2.106:8000/api/book-slot';
     try {
       final response = await http.post(
         Uri.parse(url),

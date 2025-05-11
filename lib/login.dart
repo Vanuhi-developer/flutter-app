@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
       final String email = _emailController.text;
       final String password = _passwordController.text;
 
-      final url = Uri.parse('http://192.168.2.105:8000/api/direct-login'); // Your Laravel API endpoint
+      final url = Uri.parse('http://192.168.2.106:8000/api/direct-login'); // Your Laravel API endpoint
       final response = await http.post(
         url,
         body: {
